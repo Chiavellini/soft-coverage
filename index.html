@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soft Coverage — Mexican equity valuation matrices</title>
+<style>
+:root{ color-scheme:light dark; --bg:#f7f9fc; --panel:#fff; --ink:#1f2a44; --muted:#5b6577;
+  --line:#dbe2ec; --accent:#1f6fd6; }
+@media (prefers-color-scheme:dark){ :root{ --bg:#0f1420; --panel:#151b28; --ink:#e6ebf3;
+  --muted:#93a0b5; --line:#263149; --accent:#5b9bf0; } }
+*{ box-sizing:border-box; } html,body{ margin:0; }
+body{ background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,BlinkMacSystemFont,
+  "Segoe UI",Roboto,Helvetica,Arial,sans-serif; padding:48px 20px; }
+.wrap{ max-width:640px; margin:0 auto; }
+h1{ font-size:22px; margin:0 0 4px; } .sub{ color:var(--muted); margin:0 0 28px; font-size:13px; }
+a.card{ display:block; text-decoration:none; color:inherit; background:var(--panel);
+  border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:0 0 14px;
+  transition:border-color .15s,transform .05s; }
+a.card:hover{ border-color:var(--accent); transform:translateY(-1px); }
+.card h2{ margin:0 0 4px; font-size:16px; color:var(--accent); }
+.card p{ margin:0; color:var(--muted); font-size:13px; }
+footer{ color:var(--muted); font-size:12px; margin-top:24px; border-top:1px solid var(--line);
+  padding-top:14px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+  <h1>Soft Coverage</h1>
+  <p class="sub">Daily valuation coverage matrices for BMV-listed companies · free data (BMV-XBRL filings + Yahoo prices).</p>
+  <a class="card" href="dense.html"><h2>Dense 100% matrix</h2><p>Every cell a real computed value — reduced on both axes to zero N/A.</p></a>
+  <a class="card" href="core.html"><h2>Core matrix</h2><p>The full core universe (free-price names); honest N/A where a metric is inapplicable.</p></a>
+  <footer>Last updated: <b>2026-07-15</b> · prices refresh every weekday after the BMV close · fundamentals from the latest quarterly filing.</footer>
+  </div>
+</body>
+</html>
